@@ -1,0 +1,40 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="HerokuApp Full Suite">
+<listeners>
+    <listener class-name="herokuapp.listener.ScreenshotListener"/>
+</listeners>
+
+
+    <parameter name="browser" value="chrome"/>
+
+    <test name="Functional Tests FT01 to FT20">
+
+        <classes>
+
+            <class name="herokuapp.pagestest.FT01_ABTestingTest"/>
+            <class name="herokuapp.pagestest.FT02_AddRemoveTest"/>
+            <class name="herokuapp.pagestest.FT03_BasicAuthTest"/>
+            <class name="herokuapp.pagestest.FT04_BrokenImageTest"/>
+            <class name="herokuapp.pagestest.FT05_CheckBoxTest"/>
+            <class name="herokuapp.pagestest.FT06_ContextMenuTest"/>
+            <class name="herokuapp.pagestest.FT07_DragDropTest"/>
+            <class name="herokuapp.pagestest.FT08_DropDownTest"/>
+            <class name="herokuapp.pagestest.FT09_DynamicControlTest"/>
+            <class name="herokuapp.pagestest.FT10_DynamicLoadingTest"/>
+            <class name="herokuapp.pagestest.FT11_EntryAdTest"/>
+            <class name="herokuapp.pagestest.FT12_TyposTest"/>
+            <class name="herokuapp.pagestest.FT13_FileUploadTest"/>
+            <class name="herokuapp.pagestest.FT14_FileDownloadTest"/>
+            <class name="herokuapp.pagestest.FT15_FloatingMenuTest"/>
+            <class name="herokuapp.pagestest.FT16_LoginFormTest"/>
+            <class name="herokuapp.pagestest.FT17_HorizontalSliderTest"/>
+            <class name="herokuapp.pagestest.FT18_HoversTest"/>
+            <class name="herokuapp.pagestest.FT19_InfiniteScrollTest"/>
+            <class name="herokuapp.pagestest.FT20_StatusCodesTest"/>
+
+        </classes>
+
+    </test>
+
+</suite>
